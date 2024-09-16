@@ -16,6 +16,8 @@ body {
     padding: 1rem 1.618rem;
     background-color: #f6f6f6;
     color: #121212;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -46,6 +48,8 @@ button {
     cursor: pointer;
     margin-right: 10px;
     font-size: 1.125rem;
+    flex: 1;
+    min-width: fit-content;
 }
 
 button:hover {
