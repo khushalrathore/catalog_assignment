@@ -31,12 +31,16 @@
 
 }
 
+html,
+body {
+    overflow-x: hidden !important;
+}
+
 body {
     padding: 1rem 1.618rem;
     background-color: var(--bg);
     color: var(--primary);
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .h1 {
@@ -48,6 +52,7 @@ body {
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
+
 }
 
 input[type="file"] {
