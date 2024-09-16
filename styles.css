@@ -13,6 +13,7 @@
 
     textarea {
         background: var(--code);
+        color: var(--primary);
     }
 
     button {
