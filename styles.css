@@ -1,5 +1,23 @@
 & {
-    --primary: rgb(0, 0, 0);
+    --primary: #121212;
+    --bg: #f6f6f6;
+    --code: #e0e0e0;
+}
+
+@media (prefers-color-scheme:dark) {
+    & {
+        --bg: #121212;
+        --primary: #f6f6f6;
+        --code: #252525;
+    }
+
+    textarea {
+        background: var(--code);
+    }
+
+    button {
+        background: cyan !important;
+    }
 }
 
 *,
@@ -14,8 +32,8 @@
 
 body {
     padding: 1rem 1.618rem;
-    background-color: #f6f6f6;
-    color: #121212;
+    background-color: var(--bg);
+    color: var(--primary);
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -38,14 +56,14 @@ textarea {
     font-size: 1.0125rem;
     padding: 0.5rem;
 
-    outline: black;
+    outline: var(--primary);
     outline-width: 10px;
 }
 
 button {
     padding: 10px 20px;
     background-color: var(--primary);
-    color: white;
+    color: var(--bg);
     border: none;
     cursor: pointer;
     font-size: 1.125rem;
@@ -61,7 +79,7 @@ button:hover {
 #dataDisplay {
     margin-top: 20px;
     padding: 10px;
-    background-color: #e0e0e0;
+    background-color: var(--code);
     white-space: pre-wrap;
     /* Preserve whitespace for JSON display */
 }
