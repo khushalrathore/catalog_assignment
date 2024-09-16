@@ -39,11 +39,15 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+.h1 {
+    font-size: 2rem;
+    font-weight: bold;
     color: var(--primary);
     margin-bottom: 2rem;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
 }
 
 input[type="file"] {
