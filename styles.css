@@ -1,0 +1,62 @@
+& {
+    --primary: rgb(0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Space Grotesk, sans-serif;
+
+}
+
+body {
+    padding: 1rem 1.618rem;
+    background-color: #f6f6f6;
+    color: #121212;
+}
+
+h1 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+input[type="file"] {
+    margin-bottom: 1rem;
+    font-size: 1em;
+}
+
+textarea {
+    margin-block: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 1.0125rem;
+    padding: 0.5rem;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.125rem;
+}
+
+button:hover {
+    background-color: var(--primary);
+}
+
+#result,
+#dataDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    white-space: pre-wrap;
+    /* Preserve whitespace for JSON display */
+}
